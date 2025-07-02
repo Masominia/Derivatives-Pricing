@@ -1,0 +1,27 @@
+# Market and contract used throughout unless a section says otherwise.
+market: {spot: 100.0, rate: 0.05, dividend: 0.02, vol: 0.25}
+maturity: 1.0
+strikes: [80.0, 100.0, 120.0]
+
+binomial_steps: [50, 100, 200, 400, 800, 1600, 3200]
+pde_grids: [50, 100, 200, 400, 800]
+paths: 400000
+seed: 7
+
+american_spots: [80.0, 90.0, 100.0, 110.0, 120.0]
+barriers: [70.0, 80.0, 90.0, 95.0, 99.0]
+barrier_steps: 10
+asian_dates: 50
+lookback_steps: [4, 16, 64]
+
+implied:
+  vols: [0.02, 0.1, 0.3, 1.0, 3.0]
+  strikes: [20.0, 60.0, 100.0, 160.0, 400.0]
+
+sabr:
+  forward: 100.0
+  atm_vol: 0.2
+  beta: 0.5
+  nu: 0.7
+  rhos: [-0.6, -0.3, 0.0, 0.3]
+  strikes: [60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0]
