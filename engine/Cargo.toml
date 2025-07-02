@@ -1,0 +1,18 @@
+[package]
+name = "pricekit"
+version = "0.1.0"
+edition = "2021"
+description = "Derivatives pricing: closed forms, lattices, finite differences, Monte Carlo"
+license = "MIT"
+
+[lib]
+name = "pricekit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pricekit"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
