@@ -1,0 +1,363 @@
+{
+ "four_engines": {
+  "call 80": {
+   "closed form": 23.66904325146655,
+   "against SciPy": 2.4868995751603507e-14,
+   "tree, 2,000 steps": -0.000570500146402253,
+   "grid, extrapolated": -1.4565983974534902e-07,
+   "Monte Carlo": 6.715257672951225e-05,
+   "standard error": 0.0117496223829518,
+   "z": 0.00571529658918637
+  },
+  "call 100": {
+   "closed form": 11.12376192805812,
+   "against SciPy": -3.552713678800501e-15,
+   "tree, 2,000 steps": -0.0012090552746784056,
+   "grid, extrapolated": 4.641796103044271e-08,
+   "Monte Carlo": 0.0039823392886013664,
+   "standard error": 0.0151664687531776,
+   "z": 0.2625752476341605
+  },
+  "call 120": {
+   "closed form": 4.374922416029218,
+   "against SciPy": 0.0,
+   "tree, 2,000 steps": 0.0004802590327459555,
+   "grid, extrapolated": 5.995805000935661e-06,
+   "Monte Carlo": 0.00015895336579774266,
+   "standard error": 0.01196842552255454,
+   "z": 0.013281059024697481
+  },
+  "put 80": {
+   "closed form": 1.747529880848152,
+   "against SciPy": 1.4432899320127035e-14,
+   "tree, 2,000 steps": -0.000570500147054176,
+   "grid, extrapolated": -2.5031945205533646e-07,
+   "Monte Carlo": -0.000646049731890086,
+   "standard error": 0.004981556058066976,
+   "z": -0.12968833921760115
+  },
+  "put 100": {
+   "closed form": 8.226837047453998,
+   "against SciPy": -7.105427357601002e-15,
+   "tree, 2,000 steps": -0.0012090552744208338,
+   "grid, extrapolated": 4.642306450364231e-08,
+   "Monte Carlo": 0.0032691369802577697,
+   "standard error": 0.008737526609478161,
+   "z": 0.37414901566211256
+  },
+  "put 120": {
+   "closed form": 20.50258602543937,
+   "against SciPy": 0.0,
+   "tree, 2,000 steps": 0.0004802590338890411,
+   "grid, extrapolated": 4.978036688640941e-06,
+   "Monte Carlo": -0.0005542489430894193,
+   "standard error": 0.005256970060428075,
+   "z": -0.10543125350123962
+  }
+ },
+ "orders": {
+  "tree": 0.9994628168162774,
+  "grid": 2.0036519269930704
+ },
+ "greeks": {
+  "analytic": {
+   "delta": 0.584954911257883,
+   "gamma": 0.01517923569017828,
+   "vega": 37.94808922544571,
+   "rho": 47.37172919773018
+  },
+  "bump and reprice": {
+   "delta": 0.5849544103446291,
+   "gamma": 0.01517922291682794,
+   "vega": 37.94808916591563,
+   "rho": 47.37172919320187
+  },
+  "read off the grid": {
+   "delta": 0.5849590134026812,
+   "gamma": 0.01517966036380269,
+   "vega": NaN,
+   "rho": NaN
+  }
+ },
+ "american": {
+  "80.0": {
+   "grid, extrapolated": 20.76069090814309,
+   "tree, extrapolated": 20.76069533692273,
+   "difference": -4.428779639908953e-06,
+   "European": 19.41795976808989,
+   "early-exercise premium": 1.3427311400531998,
+   "delta": -0.8173985912684131
+  },
+  "90.0": {
+   "grid, extrapolated": 13.65910649607732,
+   "tree, extrapolated": 13.65918782931313,
+   "difference": -8.133323581027696e-05,
+   "European": 12.98040181010497,
+   "early-exercise premium": 0.6787046859723489,
+   "delta": -0.6055420231227396
+  },
+  "100.0": {
+   "grid, extrapolated": 8.565119061725644,
+   "tree, extrapolated": 8.565229789803764,
+   "difference": -0.0001107280781198483,
+   "European": 8.226837047453998,
+   "early-exercise premium": 0.3382820142716465,
+   "delta": -0.4190220700302033
+  },
+  "110.0": {
+   "grid, extrapolated": 5.144772735939603,
+   "tree, extrapolated": 5.144876712016847,
+   "difference": -0.00010397607724410562,
+   "European": 4.978326831754345,
+   "early-exercise premium": 0.16644590418525773,
+   "delta": -0.2722010303897001
+  },
+  "120.0": {
+   "grid, extrapolated": 2.979215335797084,
+   "tree, extrapolated": 2.9793628911968,
+   "difference": -0.00014755539971611498,
+   "European": 2.898197848493048,
+   "early-exercise premium": 0.0810174873040359,
+   "delta": -0.167537353308705
+  }
+ },
+ "barrier": {
+  "70.0": {
+   "closed form": 11.10758653660537,
+   "share of the vanilla": 0.9985458704027143,
+   "in + out - vanilla": 0.0,
+   "grid error": 6.522380857632015e-09,
+   "Monte Carlo error": 0.028208764703631317,
+   "standard error": 0.02774537677988933,
+   "z": 1.0167014464218005
+  },
+  "80.0": {
+   "closed form": 10.73827432350598,
+   "share of the vanilla": 0.9653455722043276,
+   "in + out - vanilla": 0.0,
+   "grid error": 6.604800262266508e-09,
+   "Monte Carlo error": 0.03672072724259934,
+   "standard error": 0.02774853106899722,
+   "z": 1.3233395004331072
+  },
+  "90.0": {
+   "closed form": 8.13881054762458,
+   "share of the vanilla": 0.7316599006938093,
+   "in + out - vanilla": 3.552713678800501e-15,
+   "grid error": 1.953820456535027e-06,
+   "Monte Carlo error": -0.01566719013063178,
+   "standard error": 0.02561862481573507,
+   "z": -0.6115546889546126
+  },
+  "95.0": {
+   "closed form": 4.929827308710038,
+   "share of the vanilla": 0.44317986492278705,
+   "in + out - vanilla": 3.552713678800501e-15,
+   "grid error": 1.7711672128939426e-09,
+   "Monte Carlo error": -6.718227699842316e-05,
+   "standard error": 0.02000542001652019,
+   "z": -0.003358203773924516
+  },
+  "99.0": {
+   "closed form": 1.129603390637101,
+   "share of the vanilla": 0.10154868451362986,
+   "in + out - vanilla": 3.552713678800501e-15,
+   "grid error": -3.497138549857226e-07,
+   "Monte Carlo error": -0.008264516817900969,
+   "standard error": 0.006341121075131752,
+   "z": -1.3033210878613057
+  }
+ },
+ "asian": {
+  "geometric_continuous": 5.980198553960605,
+  "geometric_discrete": 6.078430526810322,
+  "arithmetic_plain": 6.370194840294143,
+  "plain_std_error": 0.03063103397352854,
+  "arithmetic_control": 6.372725903525004,
+  "control_std_error": 0.001017924831272755
+ },
+ "asian_error_ratio": 30.09164629104219,
+ "lookback": {
+  "4": {
+   "closed form": 19.29808796226954,
+   "Monte Carlo": 19.31364602087027,
+   "standard error": 0.03960292021148574,
+   "z": 0.39285129777414857
+  },
+  "16": {
+   "closed form": 19.29808796226954,
+   "Monte Carlo": 19.32004926340084,
+   "standard error": 0.03968277509099948,
+   "z": 0.5534215054501005
+  },
+  "64": {
+   "closed form": 19.29808796226954,
+   "Monte Carlo": 19.31453467978293,
+   "standard error": 0.03961358071908182,
+   "z": 0.41517876482867316
+  }
+ },
+ "implied_worst": 1.0436096431476471e-14,
+ "smile": {
+  "rho -0.6": {
+   "60.0": 0.3462181228585191,
+   "70.0": 0.3019415160101884,
+   "80.0": 0.2631310393812405,
+   "90.0": 0.2290580928009596,
+   "100.0": 0.2,
+   "110.0": 0.1775467962072702,
+   "120.0": 0.1639775761316476,
+   "130.0": 0.1593963042673716,
+   "140.0": 0.1609081711350613
+  },
+  "rho -0.3": {
+   "60.0": 0.3220446111931722,
+   "70.0": 0.2817710127553189,
+   "80.0": 0.2477842223647963,
+   "90.0": 0.2201300632339478,
+   "100.0": 0.1999999999999999,
+   "110.0": 0.1888510393294803,
+   "120.0": 0.1862444469483399,
+   "130.0": 0.1894685445659591,
+   "140.0": 0.1957246451026052
+  },
+  "rho +0.0": {
+   "60.0": 0.2925918026019088,
+   "70.0": 0.2573557643978766,
+   "80.0": 0.2294982636998202,
+   "90.0": 0.2099272566637952,
+   "100.0": 0.1999999999999999,
+   "110.0": 0.1992481557823722,
+   "120.0": 0.2047067881801864,
+   "130.0": 0.2132334210230546,
+   "140.0": 0.2228931617950747
+  },
+  "rho +0.3": {
+   "60.0": 0.2563651284310721,
+   "70.0": 0.2274605992132457,
+   "80.0": 0.2075811731531484,
+   "90.0": 0.1984403117702128,
+   "100.0": 0.1999999999999999,
+   "110.0": 0.2086991333370372,
+   "120.0": 0.220495746135788,
+   "130.0": 0.2330549590651755,
+   "140.0": 0.2453679228480836
+  }
+ },
+ "checks": [
+  {
+   "area": "closed form",
+   "check": "matches an independent implementation",
+   "status": "PASS",
+   "detail": "largest difference 2.5e-14"
+  },
+  {
+   "area": "tree",
+   "check": "within 0.01 of the closed form at 2,000 steps",
+   "status": "PASS",
+   "detail": "largest error 1.2e-03"
+  },
+  {
+   "area": "grid",
+   "check": "extrapolated grid within 1e-4 of the closed form",
+   "status": "PASS",
+   "detail": "largest error 6.0e-06"
+  },
+  {
+   "area": "Monte Carlo",
+   "check": "every estimate within 4 standard errors",
+   "status": "PASS",
+   "detail": "largest |z| 0.37"
+  },
+  {
+   "area": "tree",
+   "check": "first-order convergence",
+   "status": "PASS",
+   "detail": "fitted order 1.00"
+  },
+  {
+   "area": "grid",
+   "check": "second-order convergence",
+   "status": "PASS",
+   "detail": "fitted order 2.00"
+  },
+  {
+   "area": "sensitivities",
+   "check": "bumping agrees with the formulas to 1e-5 relative",
+   "status": "PASS",
+   "detail": "largest relative gap 8.6e-07"
+  },
+  {
+   "area": "sensitivities",
+   "check": "grid delta and gamma within 1%",
+   "status": "PASS",
+   "detail": "largest relative gap 2.8e-05"
+  },
+  {
+   "area": "American put",
+   "check": "grid and tree agree to 2e-3",
+   "status": "PASS",
+   "detail": "largest difference 1.5e-04"
+  },
+  {
+   "area": "American put",
+   "check": "premium positive and price above intrinsic value",
+   "status": "PASS",
+   "detail": "smallest premium 0.0810"
+  },
+  {
+   "area": "barrier",
+   "check": "knock-in plus knock-out equals the vanilla",
+   "status": "PASS",
+   "detail": "largest gap 3.6e-15"
+  },
+  {
+   "area": "barrier",
+   "check": "grid within 2e-3 of the closed form",
+   "status": "PASS",
+   "detail": "largest error 2.0e-06"
+  },
+  {
+   "area": "barrier",
+   "check": "bridge-corrected Monte Carlo unbiased with 10 steps",
+   "status": "PASS",
+   "detail": "largest |z| 1.32"
+  },
+  {
+   "area": "Asian",
+   "check": "control variate agrees with the plain estimate",
+   "status": "PASS",
+   "detail": "6.3702 against 6.3727"
+  },
+  {
+   "area": "Asian",
+   "check": "control variate cuts the standard error at least 20 times",
+   "status": "PASS",
+   "detail": "30 times"
+  },
+  {
+   "area": "lookback",
+   "check": "unbiased for every number of time steps",
+   "status": "PASS",
+   "detail": "largest |z| 0.55"
+  },
+  {
+   "area": "implied volatility",
+   "check": "round trip to 1e-8 wherever the price exceeds 1e-12",
+   "status": "PASS",
+   "detail": "largest relative error 1.0e-14 over 19 of 25 quotes"
+  },
+  {
+   "area": "SABR",
+   "check": "all smiles share the at-the-money volatility",
+   "status": "PASS",
+   "detail": "largest gap 1.1e-16"
+  },
+  {
+   "area": "SABR",
+   "check": "skew increases with the correlation",
+   "status": "PASS",
+   "detail": "slope at the money: -0.0515, -0.0313, -0.0107, +0.0103"
+  }
+ ]
+}
